@@ -1,20 +1,11 @@
 import React, { Fragment, useEffect } from "react";
 
 // reactstrap components
-import {
-  Button,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 // core components
 import { Navbar, LandingPageHeader, Footer } from "components";
+import FormSection from "./SendSection";
 
 const LandingPage = () => {
   document.documentElement.classList.remove("nav-open");
@@ -112,24 +103,33 @@ const LandingPage = () => {
                 <p className="description">
                   El equipo de Workorona es experto en resolver talleres y
                   trabajos, y en dar asesorías personalizadas y grupales en
-                  multimples áreas de conocimeinto:
+                  múltiples áreas de conocimiento:
                 </p>
                 <br />
                 <Row className="description">
                   <Col>
                     <p>·Matemáticas</p>
                     <p>·Geometría</p>
-                    <p>·Cálculo</p>
-                  </Col>
-                  <Col>
                     <p>·Química</p>
                     <p>·Física</p>
+                    <p>·Cálculo</p>
                     <p>·Biología</p>
                   </Col>
                   <Col>
+                    <p>·Historia</p>
+                    <p>·Geografía</p>
+                    <p>·Filosofía</p>
+                    <p>·Política</p>
                     <p>·Español</p>
                     <p>·Inglés</p>
+                  </Col>
+                  <Col>
                     <p>·Alemán</p>
+                    <p>·Redacción</p>
+                    <p>·Ortografía</p>
+                    <p>·Diseño</p>
+                    <p>·Adobe</p>
+                    <p>·Javascript</p>
                   </Col>
                 </Row>
               </Col>
@@ -155,60 +155,7 @@ const LandingPage = () => {
             </Row>
           </Container>
         </div>
-        <div className="section landing-section" id="enviar">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title text-center">Envía tu trabajo</h2>
-                <Form className="contact-form">
-                  <Row>
-                    <Col md="6">
-                      <label>Nombre</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Nombre" type="text" />
-                      </InputGroup>
-                    </Col>
-                    <Col md="6">
-                      <label>Email</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
-                      </InputGroup>
-                    </Col>
-                  </Row>
-                  <label>Mensaje</label>
-                  <Input
-                    placeholder="Cuéntanos un poco de qué es el trabajo o asesoría que necesitas..."
-                    type="textarea"
-                    rows="4"
-                  />
-                  <Row>
-                    <Col className="ml-auto mr-auto text-center">
-                      <Button
-                        href="https://api.whatsapp.com/send?phone=573103769786&text=Hola"
-                        target="_blank"
-                        className="btn-fill"
-                        color="danger"
-                        size="lg"
-                      >
-                        Enviar trabajo
-                      </Button>
-                    </Col>
-                  </Row>
-                </Form>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+        <FormSection />
       </div>
       <Footer />
     </Fragment>

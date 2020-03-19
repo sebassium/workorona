@@ -18,7 +18,7 @@ const MainFooter = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button color="link" tag={Link} to="/privcidad">
+                  <Button color="link" tag={Link} to="/privacidad">
                     Privacidad
                   </Button>
                 </li>
