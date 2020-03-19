@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 // reactstrap components
 import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
@@ -15,7 +15,7 @@ function RegisterPage() {
     };
   });
   return (
-    <>
+    <Fragment>
       <ExamplesNavbar />
       <div
         className="page-header"
@@ -85,7 +85,7 @@ function RegisterPage() {
           </h6>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 }
 

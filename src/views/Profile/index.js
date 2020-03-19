@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 // reactstrap components
 import {
@@ -38,7 +38,7 @@ function ProfilePage() {
     };
   });
   return (
-    <>
+    <Fragment>
       <ExamplesNavbar />
       <ProfilePageHeader />
       <div className="section profile-content">
@@ -174,7 +174,7 @@ function ProfilePage() {
         </Container>
       </div>
       <DemoFooter />
-    </>
+    </Fragment>
   );
 }
 

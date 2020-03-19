@@ -296,7 +296,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
+                <h2 className="title text-center">Envía tu trabajo</h2>
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">

@@ -13,7 +13,7 @@ import {
   Container
 } from "reactstrap";
 
-function ExamplesNavbar() {
+function MainNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -84,11 +84,6 @@ function ExamplesNavbar() {
             </NavItem>
             <NavItem>
               <NavLink to="/" tag={Link}>
-                Temas
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/" tag={Link}>
                 Envía tu trabajo
               </NavLink>
             </NavItem>
@@ -110,4 +105,4 @@ function ExamplesNavbar() {
   );
 }
 
-export default ExamplesNavbar;
+export default MainNavbar;

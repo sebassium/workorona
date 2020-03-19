@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
@@ -23,7 +23,7 @@ function LandingPageHeader() {
   });
 
   return (
-    <>
+    <Fragment>
       <div
         style={{
           backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
@@ -35,11 +35,11 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Hacemos tus trabajos en 48 horas o menos!</h1>
+            <h1>¡Entrega tus trabajos a tiempo!</h1>
             <h3>
               En Workorona somos expertos en resolver tus tareas de colegio o
-              universidad, y darte la asesoría necesaria, para que entregues
-              todo a tiempo.
+              talleres de universidad, además de darte la asesoría necesaria
+              para que entiendas el tema y entregues todo en el momento justo.
             </h3>
             <br />
             <Button className="btn-round" color="neutral" type="button" outline>
@@ -48,7 +48,7 @@ function LandingPageHeader() {
           </div>
         </Container>
       </div>
-    </>
+    </Fragment>
   );
 }
 
