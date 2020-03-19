@@ -36,11 +36,10 @@ function LandingPageHeader() {
         <Container>
           <div className="motto text-center">
             <h1>¡Entrega tus trabajos a tiempo!</h1>
-            <h3>
+            <h4>
               En Workorona somos expertos en resolver tus tareas de colegio o
-              talleres de universidad, además de darte la asesoría necesaria
-              para que entiendas el tema y entregues todo en el momento justo.
-            </h3>
+              talleres de universidad y darte la asesoría que necesitas.
+            </h4>
             <br />
             <Button className="btn-round" color="neutral" type="button" outline>
               Download
