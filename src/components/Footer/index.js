@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+
 // reactstrap components
 import { Row, Container, Button } from "reactstrap";
 
-function MainFooter() {
+const MainFooter = () => {
   return (
     <Fragment>
       <footer className="footer footer-black footer-white">
@@ -26,9 +27,9 @@ function MainFooter() {
                     className="mr-1"
                     color="link"
                     tag={Link}
-                    to="/provcidad"
+                    to="/privcidad"
                   >
-                    Política de provacidad
+                    Política de privacidad
                   </Button>
                 </li>
               </ul>
@@ -44,6 +45,6 @@ function MainFooter() {
       </footer>
     </Fragment>
   );
-}
+};
 
 export default MainFooter;
