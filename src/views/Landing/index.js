@@ -42,13 +42,13 @@ const LandingPage = () => {
             <br />
             <br />
             <Row>
-              <Col md="3">
+              <Col md="3" className="mb-5">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
+                    <i className="nc-icon nc-send" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Envío</h4>
+                    <h4 className="info-title mt-1 mb-2">Envío</h4>
                     <p className="description">
                       Nos envías un archivo o una fotografía del trabajo, junto
                       con el material de soporte que tengas.
@@ -56,13 +56,13 @@ const LandingPage = () => {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="3" className="mb-5">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
+                    <i className="nc-icon nc-money-coins" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Cotización</h4>
+                    <h4 className="info-title mt-1 mb-2">Cotización</h4>
                     <p>
                       En menos de 1 hora te decimos el costo del trabajo de
                       acuerdo a su longitud y dificultad.
@@ -70,13 +70,13 @@ const LandingPage = () => {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="3" className="mb-5">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
+                    <i className="nc-icon nc-delivery-fast" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Entrega</h4>
+                    <h4 className="info-title mt-1 mb-2">Entrega</h4>
                     <p>
                       Te enviamos el trabajo completamente resuelto a tu correo
                       electrónico en 48 horas o menos.
@@ -84,13 +84,13 @@ const LandingPage = () => {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="3" className="mb-5">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
+                    <i className="nc-icon nc-ruler-pencil" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Asesoría</h4>
+                    <h4 className="info-title mt-1 mb-2">Asesoría</h4>
                     <p>
                       Si lo necesitas, te explicamos el trabajo y te brindamos
                       ayuda en las preguntas que tengas.
@@ -135,21 +135,21 @@ const LandingPage = () => {
               </Col>
               <Col lg="6" md="12">
                 <div className="icons-container">
-                  <i className="nc-icon nc-time-alarm" />
-                  <i className="nc-icon nc-atom" />
-                  <i className="nc-icon nc-camera-compact" />
-                  <i className="nc-icon nc-watch-time" />
+                  <i className="nc-icon nc-chat-33" />
+                  <i className="nc-icon nc-chart-bar-32" />
+                  <i className="nc-icon nc-book-bookmark" />
+                  <i className="nc-icon nc-sound-wave" />
                   <i className="nc-icon nc-key-25" />
-                  <i className="nc-icon nc-diamond" />
-                  <i className="nc-icon nc-user-run" />
-                  <i className="nc-icon nc-layout-11" />
-                  <i className="nc-icon nc-badge" />
-                  <i className="nc-icon nc-bulb-63" />
-                  <i className="nc-icon nc-favourite-28" />
-                  <i className="nc-icon nc-planet" />
-                  <i className="nc-icon nc-tie-bow" />
+                  <i className="nc-icon nc-hat-3" />
                   <i className="nc-icon nc-zoom-split" />
-                  <i className="nc-icon nc-cloud-download-93" />
+                  <i className="nc-icon nc-layout-11" />
+                  <i className="nc-icon nc-atom" />
+                  <i className="nc-icon nc-single-copy-04" />
+                  <i className="nc-icon nc-glasses-2" />
+                  <i className="nc-icon nc-planet" />
+                  <i className="nc-icon nc-globe-2" />
+                  <i className="nc-icon nc-caps-small" />
+                  <i className="nc-icon nc-bulb-63" />
                 </div>
               </Col>
             </Row>
