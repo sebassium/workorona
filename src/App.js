@@ -7,13 +7,13 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 
 // pages
-import LandingPage from "views/examples/LandingPage.js";
+import { Landing } from "views";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" render={props => <LandingPage {...props} />} />
+        <Route path="/" render={props => <Landing {...props} />} />
         <Redirect to="/" />
       </Switch>
     </BrowserRouter>

@@ -79,12 +79,12 @@ function ExamplesNavbar() {
             </NavItem>
             <NavItem>
               <NavLink to="/" tag={Link}>
-                Temas
+                Servicios
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/" tag={Link}>
-                Equipo
+                Temas
               </NavLink>
             </NavItem>
             <NavItem>
