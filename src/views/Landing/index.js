@@ -134,12 +134,12 @@ const LandingPage = () => {
                 </Row>
               </Col>
               <Col lg="6" md="12">
-                <div className="icons-container">
+                <div className="icons-container mt-4 mb-4">
                   <i className="nc-icon nc-chat-33" />
                   <i className="nc-icon nc-chart-bar-32" />
                   <i className="nc-icon nc-book-bookmark" />
                   <i className="nc-icon nc-sound-wave" />
-                  <i className="nc-icon nc-key-25" />
+                  <i className="nc-icon nc-chart-pie-36" />
                   <i className="nc-icon nc-hat-3" />
                   <i className="nc-icon nc-zoom-split" />
                   <i className="nc-icon nc-layout-11" />
@@ -192,7 +192,7 @@ const LandingPage = () => {
                     rows="4"
                   />
                   <Row>
-                    <Col className="ml-auto mr-auto" md="4">
+                    <Col className="ml-auto mr-auto text-center">
                       <Button
                         href="https://api.whatsapp.com/send?phone=573103769786&text=Hola"
                         target="_blank"

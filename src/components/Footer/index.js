@@ -7,29 +7,19 @@ import { Row, Container, Button } from "reactstrap";
 const MainFooter = () => {
   return (
     <Fragment>
-      <footer className="footer footer-black footer-white">
+      <footer className="footer footer-white section-dark">
         <Container>
           <Row>
             <nav className="footer-nav">
               <ul>
                 <li>
-                  <Button
-                    className="mr-1"
-                    color="link"
-                    tag={Link}
-                    to="/terminos"
-                  >
-                    Términos y condiciones
+                  <Button color="link" tag={Link} to="/terminos">
+                    Términos
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    className="mr-1"
-                    color="link"
-                    tag={Link}
-                    to="/privcidad"
-                  >
-                    Política de privacidad
+                  <Button color="link" tag={Link} to="/privcidad">
+                    Privacidad
                   </Button>
                 </li>
               </ul>
