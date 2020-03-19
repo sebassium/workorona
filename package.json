@@ -39,5 +39,8 @@
   },
   "optionalDependencies": {
     "typescript": "3.5.2"
+  },
+  "devDependencies": {
+    "react-router-hash-link": "^1.2.2"
   }
 }

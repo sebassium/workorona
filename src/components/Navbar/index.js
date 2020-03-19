@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import classnames from "classnames";
 
 // reactstrap components
@@ -73,17 +74,17 @@ function MainNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/" tag={Link}>
+              <NavLink to="#como-funciona" tag={HashLink} smooth>
                 ¿Cómo funciona?
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/" tag={Link}>
+              <NavLink to="#servicios" tag={HashLink} smooth>
                 Servicios
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/" tag={Link}>
+              <NavLink to="#enviar" tag={HashLink} smooth>
                 Envía tu trabajo
               </NavLink>
             </NavItem>

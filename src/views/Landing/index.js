@@ -30,13 +30,11 @@ const LandingPage = () => {
       <Navbar />
       <LandingPageHeader />
       <div className="main">
-        <div className="section text-center">
+        <div className="section text-center" id="como-funciona">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title" name="como-funciona">
-                  ¿Cómo funciona?
-                </h2>
+                <h2 className="title">¿Cómo funciona?</h2>
                 <h5 className="description">Usar Workorona es muy simple.</h5>
                 <br />
               </Col>
@@ -103,8 +101,11 @@ const LandingPage = () => {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark section-nucleo-icons">
-          <Container>
+        <div
+          className="section section-dark section-nucleo-icons"
+          id="servicios"
+        >
+          <Container className="mt-5 mb-5">
             <Row>
               <Col lg="6" md="12">
                 <h2 className="title">Servicios</h2>
@@ -116,19 +117,19 @@ const LandingPage = () => {
                 <br />
                 <Row className="description">
                   <Col>
-                    <p>· Matemáticas</p>
-                    <p>· Geometría</p>
-                    <p>· Cálculo</p>
+                    <p>·Matemáticas</p>
+                    <p>·Geometría</p>
+                    <p>·Cálculo</p>
                   </Col>
                   <Col>
-                    <p>· Química</p>
-                    <p>· Física</p>
-                    <p>· Biología</p>
+                    <p>·Química</p>
+                    <p>·Física</p>
+                    <p>·Biología</p>
                   </Col>
                   <Col>
-                    <p>· Español</p>
-                    <p>· Inglés</p>
-                    <p>· Alemán</p>
+                    <p>·Español</p>
+                    <p>·Inglés</p>
+                    <p>·Alemán</p>
                   </Col>
                 </Row>
               </Col>
@@ -154,7 +155,7 @@ const LandingPage = () => {
             </Row>
           </Container>
         </div>
-        <div className="section landing-section">
+        <div className="section landing-section" id="enviar">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">

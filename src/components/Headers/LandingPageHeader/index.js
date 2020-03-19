@@ -1,4 +1,5 @@
 import React, { Fragment, createRef, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
@@ -41,7 +42,16 @@ const LandingPageHeader = () => {
               talleres de universidad y darte la asesoría que necesitas.
             </h4>
             <br />
-            <Button className="btn-round" color="neutral" type="button" outline>
+
+            <Button
+              className="btn-round"
+              color="neutral"
+              type="button"
+              outline
+              tag={HashLink}
+              smooth
+              to="#como-funciona"
+            >
               Comenzar
             </Button>
           </div>
