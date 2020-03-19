@@ -9,7 +9,7 @@ import "assets/demo/demo.css";
 // pages
 import { Landing } from "views";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -18,6 +18,6 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
