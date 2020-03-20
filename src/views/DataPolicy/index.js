@@ -19,7 +19,7 @@ const DataPolicy = () => {
     <Fragment>
       <Navbar />
       <ProfilePageHeader />
-      <h1>Políticas de Provacidad</h1>
+      <h1>Políticas de Privacidad</h1>
       <Footer />
     </Fragment>
   );

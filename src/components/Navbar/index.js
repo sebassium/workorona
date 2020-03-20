@@ -11,7 +11,9 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
+  Row,
+  Col
 } from "reactstrap";
 
 function MainNavbar() {
@@ -53,7 +55,16 @@ function MainNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand data-placement="bottom" to="/" tag={Link}>
-            Workorona
+            <Row xs="2">
+              <Col className="px-0 pr-2">
+                <img
+                  alt="..."
+                  width="20px"
+                  src={require("assets/img/crown-icon.png")}
+                />
+              </Col>
+              <Col className="px-0">Workorona</Col>
+            </Row>
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

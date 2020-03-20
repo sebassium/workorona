@@ -50,7 +50,7 @@ const FormSection = () => {
   };
 
   const sendMsg = (name, email, text) => {
-    const url = `https://api.whatsapp.com/send?phone=573103769786&text=Hola%20Workana!%20Estoy%20interesad@%20en%20tus%20servicios.%20Nombre:%20${name},%20Correo:%20${email},%20Mensaje:%20${text}`;
+    const url = `https://api.whatsapp.com/send?phone=573103769786&text=Hola%20Workorona!%20Estoy%20interesad@%20en%20tus%20servicios.%20Nombre:%20${name},%20Correo:%20${email},%20Mensaje:%20${text}`;
     window.open(url, "_blank");
   };
 
