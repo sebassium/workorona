@@ -7,12 +7,14 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 
 // pages
-import { Landing } from "views";
+import { Landing, Terms, DataPolicy } from "views";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/terminos" render={props => <Terms {...props} />} />
+        <Route path="/privacidad" render={props => <DataPolicy {...props} />} />
         <Route path="/" render={props => <Landing {...props} />} />
         <Redirect to="/" />
       </Switch>

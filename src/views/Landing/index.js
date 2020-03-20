@@ -103,7 +103,7 @@ const LandingPage = () => {
                 <p className="description">
                   El equipo de Workorona es experto en resolver talleres y
                   trabajos, y en dar asesorías personalizadas y grupales en
-                  múltiples áreas de conocimiento:
+                  múltiples áreas del conocimiento:
                 </p>
                 <br />
                 <Row className="description">
