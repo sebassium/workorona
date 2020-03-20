@@ -27,7 +27,7 @@ const LandingPageHeader = () => {
     <Fragment>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/landing.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}

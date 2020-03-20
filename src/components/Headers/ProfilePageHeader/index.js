@@ -25,8 +25,7 @@ function ProfilePageHeader() {
     <Fragment>
       <div
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/fabio-mangione.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/landing.jpg") + ")"
         }}
         className="page-header page-header-xs"
         data-parallax={true}
