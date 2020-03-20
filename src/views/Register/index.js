@@ -5,6 +5,8 @@ import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+const backgroundImage =
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712106/seed/q8ifficsv0n4ynbbkyjk.jpg";
 
 function RegisterPage() {
   document.documentElement.classList.remove("nav-open");
@@ -20,7 +22,7 @@ function RegisterPage() {
       <div
         className="page-header"
         style={{
-          backgroundImage: "url(" + require("assets/img/landing.jpg") + ")"
+          backgroundImage: `url(${backgroundImage})`
         }}
       >
         <div className="filter" />

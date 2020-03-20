@@ -16,6 +16,10 @@ import {
   Col
 } from "reactstrap";
 
+// core components
+const logo =
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712984/seed/tin69rcpqoqbw39ktxef.png";
+
 function MainNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -57,11 +61,7 @@ function MainNavbar() {
           <NavbarBrand data-placement="bottom" to="/" tag={Link}>
             <Row xs="2">
               <Col className="pl-3 pr-2">
-                <img
-                  alt="..."
-                  width="20px"
-                  src={require("assets/img/crown-icon.png")}
-                />
+                <img alt="..." width="20px" src={logo} />
               </Col>
               <Col className="px-0">Workorona</Col>
             </Row>
@@ -105,6 +105,7 @@ function MainNavbar() {
                 href="https://www.instagram.com/workorona"
                 target="_blank"
                 title="Follow us on Instagram"
+                rel="noopener"
               >
                 <i className="fa fa-instagram" />
                 <p className="d-lg-none">Instagram</p>

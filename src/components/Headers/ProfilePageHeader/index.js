@@ -3,6 +3,8 @@ import React, { Fragment } from "react";
 // reactstrap components
 
 // core components
+const backgroundImage =
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712106/seed/q8ifficsv0n4ynbbkyjk.jpg";
 
 function ProfilePageHeader() {
   let pageHeader = React.createRef();
@@ -25,7 +27,7 @@ function ProfilePageHeader() {
     <Fragment>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/landing.jpg") + ")"
+          backgroundImage: `url(${backgroundImage})`
         }}
         className="page-header page-header-xs "
         data-parallax={true}

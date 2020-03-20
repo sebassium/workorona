@@ -20,6 +20,8 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+const backgroundImage =
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712106/seed/q8ifficsv0n4ynbbkyjk.jpg";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -48,7 +50,7 @@ function ProfilePage() {
               <img
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
-                src={require("assets/img/landing.jpg")}
+                src={backgroundImage}
               />
             </div>
             <div className="name">

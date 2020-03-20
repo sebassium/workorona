@@ -5,6 +5,8 @@ import { HashLink } from "react-router-hash-link";
 import { Button, Container } from "reactstrap";
 
 // core components
+const backgroundImage =
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712106/seed/q8ifficsv0n4ynbbkyjk.jpg";
 
 const LandingPageHeader = () => {
   let pageHeader = createRef();
@@ -27,7 +29,7 @@ const LandingPageHeader = () => {
     <Fragment>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/landing.jpg") + ")"
+          backgroundImage: `url(${backgroundImage})`
         }}
         className="page-header"
         data-parallax={true}

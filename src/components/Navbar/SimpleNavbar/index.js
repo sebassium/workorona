@@ -15,6 +15,10 @@ import {
   Collapse
 } from "reactstrap";
 
+// core components
+const logo =
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712984/seed/tin69rcpqoqbw39ktxef.png";
+
 function SimpleNavbar() {
   const [navbarColor, setNavbarColor] = useState("navbar-transparent");
 
@@ -50,11 +54,7 @@ function SimpleNavbar() {
           <NavbarBrand data-placement="bottom" to="/" tag={Link}>
             <Row xs="2">
               <Col className="pl-3 pr-2">
-                <img
-                  alt="..."
-                  width="20px"
-                  src={require("assets/img/crown-icon.png")}
-                />
+                <img alt="..." width="20px" src={logo} />
               </Col>
               <Col className="px-0">Workorona</Col>
             </Row>
