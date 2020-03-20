@@ -4,12 +4,7 @@ import React, { Fragment, useEffect } from "react";
 
 // core components
 import dataPolicy from "./dataPolicy.md";
-import {
-  SimpleNavbar,
-  ProfilePageHeader,
-  Footer,
-  MarkdownText
-} from "components";
+import { SimpleNavbar, Footer, MarkdownText } from "components";
 
 const DataPolicy = () => {
   document.documentElement.classList.remove("nav-open");
@@ -23,7 +18,6 @@ const DataPolicy = () => {
   return (
     <Fragment>
       <SimpleNavbar />
-      <ProfilePageHeader />
       <MarkdownText title={"Política de Privacidad"} body={dataPolicy} />
       <div className="mt-4" />
       <Footer />

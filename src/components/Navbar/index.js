@@ -68,9 +68,7 @@ function MainNavbar() {
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse
-            })}
+            className="navbar-toggler navbar-toggler"
             onClick={toggleNavbarCollapse}
           >
             <span className="navbar-toggler-bar bar1" />

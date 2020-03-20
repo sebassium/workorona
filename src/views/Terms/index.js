@@ -4,12 +4,7 @@ import React, { Fragment, useEffect } from "react";
 
 // core components
 import terms from "./terms.md";
-import {
-  SimpleNavbar,
-  ProfilePageHeader,
-  Footer,
-  MarkdownText
-} from "components";
+import { SimpleNavbar, Footer, MarkdownText } from "components";
 
 const Terms = () => {
   document.documentElement.classList.remove("nav-open");
@@ -23,7 +18,6 @@ const Terms = () => {
   return (
     <Fragment>
       <SimpleNavbar />
-      <ProfilePageHeader />
       <MarkdownText title={"Términos y Condiciones"} body={terms} />
       <div className="mt-4" />
       <Footer />
