@@ -27,7 +27,7 @@ function ProfilePageHeader() {
         style={{
           backgroundImage: "url(" + require("assets/img/landing.jpg") + ")"
         }}
-        className="page-header page-header-xs"
+        className="page-header page-header-xs "
         data-parallax={true}
         ref={pageHeader}
       >

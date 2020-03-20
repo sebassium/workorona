@@ -56,7 +56,7 @@ function MainNavbar() {
         <div className="navbar-translate">
           <NavbarBrand data-placement="bottom" to="/" tag={Link}>
             <Row xs="2">
-              <Col className="px-0 pr-2">
+              <Col className="pl-3 pr-2">
                 <img
                   alt="..."
                   width="20px"

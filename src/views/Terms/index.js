@@ -4,9 +4,15 @@ import React, { Fragment, useEffect } from "react";
 // import { Container, Row, Col } from "reactstrap";
 
 // core components
-import { Navbar, ProfilePageHeader, Footer } from "components";
+import terms from "./terms.md";
+import {
+  SimpleNavbar,
+  ProfilePageHeader,
+  Footer,
+  MarkdownText
+} from "components";
 
-const DataPolicy = () => {
+const Terms = () => {
   document.documentElement.classList.remove("nav-open");
   useEffect(() => {
     document.body.classList.add("profile-page");
@@ -17,12 +23,12 @@ const DataPolicy = () => {
 
   return (
     <Fragment>
-      <Navbar />
+      <SimpleNavbar />
       <ProfilePageHeader />
-      <h1>Términos y condiciones</h1>
+      <MarkdownText title={"Términos y Condiciones"} body={terms} />
       <Footer />
     </Fragment>
   );
 };
 
-export default DataPolicy;
+export default Terms;
