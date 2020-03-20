@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 
 // reactstrap components
-// import { Container, Row, Col } from "reactstrap";
 
 // core components
 import terms from "./terms.md";
@@ -26,6 +25,7 @@ const Terms = () => {
       <SimpleNavbar />
       <ProfilePageHeader />
       <MarkdownText title={"Términos y Condiciones"} body={terms} />
+      <div className="mt-4" />
       <Footer />
     </Fragment>
   );

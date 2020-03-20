@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 
 // reactstrap components
-// import { Container, Row, Col } from "reactstrap";
 
 // core components
 import dataPolicy from "./dataPolicy.md";
@@ -26,6 +25,7 @@ const DataPolicy = () => {
       <SimpleNavbar />
       <ProfilePageHeader />
       <MarkdownText title={"Política de Privacidad"} body={dataPolicy} />
+      <div className="mt-4" />
       <Footer />
     </Fragment>
   );
