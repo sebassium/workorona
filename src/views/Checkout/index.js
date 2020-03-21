@@ -5,7 +5,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 // reactstrap components
 import {
   Card,
-  // CardImg,
+  CardImg,
   CardBody,
   CardTitle,
   CardText,
@@ -67,6 +67,15 @@ const Terms = () => {
                 Esta opción es fácil y rápida: solo entra a la App, selecciona
                 "Leer QR" y escanéa el código y listo!
               </CardText>
+              {app ? (
+                <CardText className="text-center">
+                  <CardImg
+                    src={require("assets/img/qr-test.jpeg")}
+                    alt="..."
+                    style={{ maxWidth: "20rem" }}
+                  />
+                </CardText>
+              ) : null}
               <Button
                 color={app ? "danger" : "primary"}
                 onClick={hanldeClickApp}
@@ -86,8 +95,8 @@ const Terms = () => {
                 también a través de PSE o Efecty.
               </CardText>
               <Button
-                color={others ? "danger" : "primary"}
                 onClick={hanldeClickOthers}
+                color={others ? "danger" : "primary"}
                 className="btn-round btn-icon text-center"
                 mp-mode="dftl"
                 name="MP-payButton"
