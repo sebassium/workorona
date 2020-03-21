@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 // reactstrap components
 import {
@@ -51,7 +51,7 @@ const Terms = () => {
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="title">Métodos de pago</h2>
                 <h5 className="description">
-                  Puesdes realizar tu pago a través una transferencia desde la
+                  Puedes realizar tu pago a través de una transferencia desde la
                   App de Bancolombia usando un código QR o seleccionar la opción
                   de pagar con otros métodos.
                 </h5>
@@ -64,28 +64,36 @@ const Terms = () => {
                 <h4 className="title my-0">Con la App de Bancolombia</h4>
               </CardTitle>
               <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Esta opción es fácil y rápida: solo entra a la App, selecciona
+                "Leer QR" y escanéa el código y listo!
               </CardText>
               <Button
                 color={app ? "danger" : "primary"}
                 onClick={hanldeClickApp}
+                className="btn-round btn-icon text-center"
               >
+                <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                 Seleccionar
               </Button>
             </CardBody>
           </Card>
           <Card style={{ maxWidth: "50rem" }} className="mx-auto">
             <CardBody>
-              <CardTitle>Con otros medios de pago</CardTitle>
+              <h4 className="title my-0">Con otros medios de pago</h4>
               <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Seleccionando esta opción puedes pagar con tu tarjeta de crédito
+                Visa, American Express, MasterCard, Diners Club o Codensa y
+                también a través de PSE o Efecty.
               </CardText>
               <Button
                 color={others ? "danger" : "primary"}
                 onClick={hanldeClickOthers}
+                className="btn-round btn-icon text-center"
+                mp-mode="dftl"
+                name="MP-payButton"
+                href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=151726621-8530e763-ec83-48fa-a2d7-cd1115b330e5"
               >
+                <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                 Seleccionar
               </Button>
             </CardBody>
