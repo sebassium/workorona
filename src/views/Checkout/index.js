@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
+import qs from "query-string";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,8 +18,9 @@ import {
 
 // core components
 import { SimpleNavbar } from "components";
+import { type } from "helpers";
 
-const Terms = () => {
+const Terms = props => {
   document.documentElement.classList.remove("nav-open");
   useEffect(() => {
     document.body.classList.add("profile-page");
@@ -27,11 +29,14 @@ const Terms = () => {
     };
   });
 
+  const { location } = props;
+  const { code } = qs.parse(location.search, { ignoreQueryPrefix: true });
+  const pay = type(code);
+
   const [state, setState] = useState({
     app: false,
     others: false
   });
-
   const { app, others } = state;
 
   const hanldeClickApp = () => {
@@ -44,7 +49,7 @@ const Terms = () => {
   return (
     <Fragment>
       <SimpleNavbar />
-      <div className="section">
+      <div>
         <Container>
           <div>
             <Row className="text-center">
@@ -70,7 +75,7 @@ const Terms = () => {
               {app ? (
                 <CardText className="text-center">
                   <CardImg
-                    src={require("assets/img/qr-test.jpeg")}
+                    src={pay.qr}
                     alt="..."
                     style={{ maxWidth: "20rem" }}
                   />
@@ -100,7 +105,7 @@ const Terms = () => {
                 className="btn-round btn-icon text-center"
                 mp-mode="dftl"
                 name="MP-payButton"
-                href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=151726621-8530e763-ec83-48fa-a2d7-cd1115b330e5"
+                href={pay.link}
               >
                 <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
                 Seleccionar
@@ -109,21 +114,8 @@ const Terms = () => {
           </Card>
         </Container>
       </div>
-      {/* <Footer /> */}
     </Fragment>
   );
 };
 
 export default Terms;
-
-// <Button
-//   size="lg"
-//   color="info"
-//   className="btn-round btn-icon text-center"
-//   mp-mode="dftl"
-//   name="MP-payButton"
-//   href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=151726621-893b2383-45a2-4a6f-9e74-5e8939319b7b"
-// >
-//   <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
-//   Pagar
-// </Button>
