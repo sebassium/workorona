@@ -31,7 +31,7 @@ const SimpleNavbar = () => {
           }}
         />
       ) : null}
-      <Navbar color="info" expand="lg" className="sticky-top">
+      <Navbar expand="lg" className="navbar-light bg-primary">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand data-placement="bottom" to="/" tag={Link}>
