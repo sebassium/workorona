@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
     <!-- Primary Meta Tags -->
@@ -44,6 +44,30 @@
       content="https://res.cloudinary.com/sebashr20/image/upload/v1584721516/seed/oumjlvbtdbhlhbyf13ds.jpg"
     />
     <title>Workorona</title>
+    <!-- Mercadopago -->
+    <script type="text/javascript">
+      (function() {
+        function $MPC_load() {
+          window.$MPC_loaded !== true &&
+            (function() {
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              s.src =
+                document.location.protocol +
+                "//secure.mlstatic.com/mptools/render.js";
+              var x = document.getElementsByTagName("script")[0];
+              x.parentNode.insertBefore(s, x);
+              window.$MPC_loaded = true;
+            })();
+        }
+        window.$MPC_loaded !== true
+          ? window.attachEvent
+            ? window.attachEvent("onload", $MPC_load)
+            : window.addEventListener("load", $MPC_load, false)
+          : null;
+      })();
+    </script>
   </head>
   <body class="sidebar-collapse">
     <noscript>You need to enable JavaScript to run this app.</noscript>

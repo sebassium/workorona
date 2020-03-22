@@ -6,12 +6,13 @@ import "assets/css/bootstrap.min.css";
 import "assets/scss/paper-kit.scss";
 
 // pages
-import { Landing, Terms, DataPolicy } from "views";
+import { Landing, Terms, DataPolicy, Checkout } from "views";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/checkout" render={props => <Checkout {...props} />} />
         <Route path="/terminos" render={props => <Terms {...props} />} />
         <Route path="/privacidad" render={props => <DataPolicy {...props} />} />
         <Route path="/" render={props => <Landing {...props} />} />
