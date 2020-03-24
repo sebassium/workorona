@@ -56,11 +56,11 @@ const FormSection = () => {
 
   return (
     <Fragment>
-      <div className="section landing-section" id="enviar">
+      <div className="section landing-section" id="contacto">
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="8">
-              <h2 className="title text-center">Envía tu trabajo</h2>
+              <h2 className="title text-center">Contáctanos</h2>
               <Form className="contact-form" onSubmit={handleSubmit}>
                 <Row>
                   <Col md="6">
@@ -96,7 +96,7 @@ const FormSection = () => {
                 </Row>
                 <label>Mensaje</label>
                 <Input
-                  placeholder="Cuéntanos un poco de qué es el trabajo o asesoría que necesitas..."
+                  placeholder="Cuéntanos detalladamente de qué es el trabajo o asesoría que necesitas..."
                   type="textarea"
                   rows="4"
                   id="text"
@@ -114,7 +114,7 @@ const FormSection = () => {
                       color="info"
                       size="lg"
                     >
-                      Enviar trabajo
+                      Enviar
                     </Button>
                   </Col>
                 </Row>

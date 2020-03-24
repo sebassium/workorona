@@ -113,12 +113,12 @@ function MainNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
-                to="#enviar"
+                to="#contacto"
                 tag={HashLink}
                 smooth
                 style={{ color: "rgb(30, 25, 75)" }}
               >
-                Envía tu trabajo
+                Contáctanos
               </NavLink>
             </NavItem>
             <NavItem>

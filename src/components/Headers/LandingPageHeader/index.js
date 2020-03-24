@@ -38,15 +38,16 @@ const LandingPageHeader = () => {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>¡Entrega tus trabajos a tiempo!</h1>
-            <h3>
-              Workorona somos expertos en darte la asesoría que necesitas para
-              resolver tus tareas de colegio o talleres de universidad.
-            </h3>
-            <br />
-
+            <span className="text-shadow">
+              <h1>¡Entrega tus trabajos a tiempo!</h1>
+              <h3>
+                En Workorona somos expertos en darte la asesoría que necesitas
+                para resolver tus tareas de colegio o talleres de universidad y
+                en la solución de ejercicios para preparar tus exámenes.
+              </h3>
+            </span>
             <Button
-              className="btn-round"
+              className="btn-round mt-4"
               color="info"
               type="button"
               tag={HashLink}

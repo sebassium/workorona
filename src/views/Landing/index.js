@@ -42,8 +42,9 @@ const LandingPage = () => {
                   <div className="description">
                     <h4 className="info-title mt-1 mb-2">Envío</h4>
                     <p className="description">
-                      Nos envías un archivo o una fotografía del trabajo, junto
-                      con el material de soporte que tengas.
+                      Nos envías un archivo o una fotografía de los ejercicios
+                      que te interesa resolver y una explicación de lo que
+                      quieres.
                     </p>
                   </div>
                 </div>
@@ -56,8 +57,8 @@ const LandingPage = () => {
                   <div className="description">
                     <h4 className="info-title mt-1 mb-2">Cotización</h4>
                     <p>
-                      En menos de 1 hora te decimos el costo del trabajo de
-                      acuerdo a su longitud y dificultad.
+                      En menos de una hora te decimos el costo del trabajo y su
+                      explicación de acuerdo a su longitud y dificultad.
                     </p>
                   </div>
                 </div>
@@ -70,8 +71,8 @@ const LandingPage = () => {
                   <div className="description">
                     <h4 className="info-title mt-1 mb-2">Entrega</h4>
                     <p>
-                      Te enviamos el trabajo completamente resuelto a tu correo
-                      electrónico en 48 horas o menos.
+                      En 48 horas o menos te enviamos a tu correo el trabajo
+                      resuelto y un video explicándote la solución (opcional).
                     </p>
                   </div>
                 </div>
@@ -84,8 +85,8 @@ const LandingPage = () => {
                   <div className="description">
                     <h4 className="info-title mt-1 mb-2">Asesoría</h4>
                     <p>
-                      Si lo necesitas, te explicamos el trabajo y te brindamos
-                      ayuda en las preguntas que tengas.
+                      También ofrecemos asesorías personalizadas o grupales en
+                      múltiples áreas del conocimiento.
                     </p>
                   </div>
                 </div>
