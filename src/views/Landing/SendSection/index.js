@@ -111,7 +111,7 @@ const FormSection = () => {
                     <Button
                       type="submit"
                       className="btn-fill"
-                      color="danger"
+                      color="info"
                       size="lg"
                     >
                       Enviar trabajo

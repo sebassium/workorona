@@ -6,7 +6,7 @@ import { Button, Container } from "reactstrap";
 
 // core components
 const backgroundImage =
-  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712106/seed/landing_background.jpg";
+  "https://res.cloudinary.com/sebashr20/image/upload/v1585004469/seed/feelewloown9pdfrg7vp.png";
 
 const LandingPageHeader = () => {
   let pageHeader = createRef();
@@ -39,17 +39,16 @@ const LandingPageHeader = () => {
         <Container>
           <div className="motto text-center">
             <h1>¡Entrega tus trabajos a tiempo!</h1>
-            <h4>
+            <h3>
               En Workorona somos expertos en resolver tus tareas de colegio o
               talleres de universidad y darte la asesoría que necesitas.
-            </h4>
+            </h3>
             <br />
 
             <Button
               className="btn-round"
-              color="neutral"
+              color="info"
               type="button"
-              outline
               tag={HashLink}
               smooth
               to="#como-funciona"

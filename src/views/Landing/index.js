@@ -20,8 +20,9 @@ const LandingPage = () => {
     <Fragment>
       <Navbar />
       <LandingPageHeader />
+      <span id="como-funciona" />
       <div className="main">
-        <div className="section text-center" id="como-funciona">
+        <div className="section text-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">

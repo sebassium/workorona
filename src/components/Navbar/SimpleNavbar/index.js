@@ -16,7 +16,7 @@ import {
 
 // core components
 const logo =
-  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712984/seed/tin69rcpqoqbw39ktxef.png";
+  "https://res.cloudinary.com/sebashr20/image/upload/v1584997849/seed/xtxux3aexfhvd8nophkm.png";
 
 const SimpleNavbar = () => {
   const [bodyClick, setBodyClick] = React.useState(false);
@@ -31,23 +31,26 @@ const SimpleNavbar = () => {
           }}
         />
       ) : null}
-      <Navbar expand="lg" color="primary">
+      <Navbar expand="lg">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand data-placement="bottom" to="/" tag={Link}>
+            <NavbarBrand
+              data-placement="bottom"
+              to="/"
+              tag={Link}
+              className="py-0"
+            >
               <Row xs="2">
-                <Col className="pl-3 pr-2">
-                  <img alt="..." width="20px" src={logo} />
+                <Col>
+                  <img alt="..." style={{ width: "230px" }} src={logo} />
                 </Col>
-                <Col className="px-0">Workorona</Col>
               </Row>
             </NavbarBrand>
             <button className="navbar-toggler navbar-toggler">
               <Button
                 size="sm"
                 className="btn-round mr-2 px-3"
-                color="neutral"
-                outline
+                color="info"
                 to="/"
                 tag={Link}
               >
@@ -61,8 +64,7 @@ const SimpleNavbar = () => {
                 <Button
                   size="sm"
                   className="btn-round mr-2 px-3"
-                  color="neutral"
-                  outline
+                  color="info"
                   to="/"
                   tag={Link}
                 >

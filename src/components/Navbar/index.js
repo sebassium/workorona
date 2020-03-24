@@ -18,7 +18,7 @@ import {
 
 // core components
 const logo =
-  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1584712984/seed/tin69rcpqoqbw39ktxef.png";
+  "https://res.cloudinary.com/sebashr20/image/upload/v1584997849/seed/xtxux3aexfhvd8nophkm.png";
 
 function MainNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -58,12 +58,21 @@ function MainNavbar() {
     >
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand data-placement="bottom" to="/" tag={Link}>
+          <NavbarBrand
+            data-placement="bottom"
+            to="/"
+            tag={Link}
+            className="py-0"
+          >
             <Row xs="2">
-              <Col className="pl-3 pr-2">
-                <img alt="..." width="20px" src={logo} />
+              <Col>
+                <img
+                  alt="..."
+                  style={{ width: "230px" }}
+                  src={logo}
+                  className="pb-2"
+                />
               </Col>
-              <Col className="px-0">Workorona</Col>
             </Row>
           </NavbarBrand>
           <button
@@ -83,17 +92,32 @@ function MainNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="#como-funciona" tag={HashLink} smooth>
+              <NavLink
+                to="#como-funciona"
+                tag={HashLink}
+                smooth
+                style={{ color: "rgb(30, 25, 75)" }}
+              >
                 ¿Cómo funciona?
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="#servicios" tag={HashLink} smooth>
+              <NavLink
+                to="#servicios"
+                tag={HashLink}
+                smooth
+                style={{ color: "rgb(30, 25, 75)" }}
+              >
                 Servicios
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="#enviar" tag={HashLink} smooth>
+              <NavLink
+                to="#enviar"
+                tag={HashLink}
+                smooth
+                style={{ color: "rgb(30, 25, 75)" }}
+              >
                 Envía tu trabajo
               </NavLink>
             </NavItem>
@@ -104,6 +128,7 @@ function MainNavbar() {
                 target="_blank"
                 title="Follow us on Instagram"
                 rel="noopener"
+                style={{ color: "rgb(30, 25, 75)" }}
               >
                 <i className="fa fa-instagram" />
                 <p className="d-lg-none">Instagram</p>
