@@ -124,6 +124,19 @@ function MainNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
+                href="https://www.facebook.com/workorona"
+                target="_blank"
+                title="Follow us on Facebook"
+                rel="noopener"
+                style={{ color: "rgb(30, 25, 75)" }}
+              >
+                <i className="fa fa-facebook" />
+                <p className="d-lg-none">Facebook</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
                 href="https://www.instagram.com/workorona"
                 target="_blank"
                 title="Follow us on Instagram"

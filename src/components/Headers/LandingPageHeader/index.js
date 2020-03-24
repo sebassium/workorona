@@ -6,7 +6,7 @@ import { Button, Container } from "reactstrap";
 
 // core components
 const backgroundImage =
-  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1585004469/seed/feelewloown9pdfrg7vp.png";
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto/v1585011811/seed/ymrhkcpfdsqih25jkohn.jpg";
 
 const LandingPageHeader = () => {
   let pageHeader = createRef();
@@ -40,8 +40,8 @@ const LandingPageHeader = () => {
           <div className="motto text-center">
             <h1>¡Entrega tus trabajos a tiempo!</h1>
             <h3>
-              En Workorona somos expertos en resolver tus tareas de colegio o
-              talleres de universidad y darte la asesoría que necesitas.
+              Workorona somos expertos en darte la asesoría que necesitas para
+              resolver tus tareas de colegio o talleres de universidad.
             </h3>
             <br />
 
