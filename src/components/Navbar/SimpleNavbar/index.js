@@ -42,7 +42,7 @@ const SimpleNavbar = () => {
             >
               <Row xs="2">
                 <Col>
-                  <img alt="..." style={{ width: "230px" }} src={logo} />
+                  <img alt="..." style={{ width: "200px" }} src={logo} />
                 </Col>
               </Row>
             </NavbarBrand>
