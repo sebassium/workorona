@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -50,7 +51,7 @@ const FormSection = () => {
   };
 
   const sendMsg = (name, email, text) => {
-    const url = `https://api.whatsapp.com/send?phone=573103769786&text=Hola%20Workorona!%20Estoy%20interesad@%20en%20tus%20servicios.%20Nombre:%20${name},%20Correo:%20${email},%20Mensaje:%20${text}`;
+    const url = `https://api.whatsapp.com/send?phone=573053736984&text=Hola%20Workorona!%20Estoy%20interesad@%20en%20tus%20servicios.%20Nombre:%20${name},%20Correo:%20${email},%20Mensaje:%20${text}`;
     window.open(url, "_blank");
   };
 
@@ -105,6 +106,11 @@ const FormSection = () => {
                   value={text}
                   invalid={errors.text && touched.text ? true : false}
                 />
+                <p className="mt-3">
+                  Al enviarnos tu solicitud estás aceptando nuestros{" "}
+                  <Link to="/terminos">términos y condiciones</Link> y{" "}
+                  <Link to="/privacidad">políticas de privacidad.</Link>
+                </p>
                 <FormText className="text-danger">{errors.text}</FormText>
                 <Row>
                   <Col className="ml-auto mr-auto text-center">
