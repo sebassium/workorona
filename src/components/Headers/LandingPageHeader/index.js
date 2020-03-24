@@ -6,7 +6,7 @@ import { Button, Container } from "reactstrap";
 
 // core components
 const backgroundImage =
-  "https://res.cloudinary.com/sebashr20/image/upload/v1585004469/seed/feelewloown9pdfrg7vp.png";
+  "https://res.cloudinary.com/sebashr20/image/upload/q_auto:low/v1585004469/seed/feelewloown9pdfrg7vp.png";
 
 const LandingPageHeader = () => {
   let pageHeader = createRef();
