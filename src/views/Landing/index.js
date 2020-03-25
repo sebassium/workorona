@@ -104,7 +104,8 @@ const LandingPage = () => {
                 <h2 className="title">Servicios</h2>
                 <p className="description">
                   El equipo de Workorona es experto en resolver talleres y
-                  trabajos, y en dar asesorías personalizadas y grupales en
+                  trabajos, y en dar asesorías personalizadas y grupales para
+                  estudiantes de primaria, secundaria y universidad, en
                   múltiples áreas del conocimiento:
                 </p>
                 <br />
