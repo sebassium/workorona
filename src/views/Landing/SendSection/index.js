@@ -11,7 +11,7 @@ import {
   Container,
   Row,
   Col,
-  FormText
+  FormText,
 } from "reactstrap";
 
 const FormSchema = Yup.object().shape({
@@ -19,13 +19,11 @@ const FormSchema = Yup.object().shape({
     .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  email: Yup.string()
-    .email("Invalid email")
-    .required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
   text: Yup.string()
     .min(2, "Too Short!")
     .max(500, "Too Long!")
-    .required("Required")
+    .required("Required"),
 });
 
 const FormSection = () => {
@@ -33,26 +31,26 @@ const FormSection = () => {
     initialValues: {
       name: "",
       email: "",
-      text: ""
+      text: "",
     },
     validationSchema: FormSchema,
-    onSubmit: values => {
+    onSubmit: (values) => {
       const { name, email, text } = values;
       const newName = replaceSpace(name);
       const newText = replaceSpace(text);
       sendMsg(newName, email, newText);
-    }
+    },
   });
 
   const { name, email, text } = values;
 
-  const replaceSpace = text => {
+  const replaceSpace = (text) => {
     return text.replace(/ /g, "%20");
   };
 
   const sendMsg = (name, email, text) => {
-    const url = `https://api.whatsapp.com/send?phone=573053736984&text=Hola%20Workorona!%20Estoy%20interesad@%20en%20tus%20servicios.%20Nombre:%20${name},%20Correo:%20${email},%20Mensaje:%20${text}`;
-    window.open(url, "_blank");
+    // const url = `https://api.whatsapp.com/send?phone=573053736984&text=Hola%20Workorona!%20Estoy%20interesad@%20en%20tus%20servicios.%20Nombre:%20${name},%20Correo:%20${email},%20Mensaje:%20${text}`;
+    // window.open(url, "_blank");
   };
 
   return (
